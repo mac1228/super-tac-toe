@@ -1,0 +1,16 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @game.name %>
+</p>
+
+<p>
+  <b>Num of players:</b>
+  <%= @game.num_of_players %>
+</p>
+
+<%= link_to "Join!", signup_path, class: "btn btn-large btn-primary" %>
+</p>
+<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Back', games_path %>

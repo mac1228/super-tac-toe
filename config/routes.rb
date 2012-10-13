@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
 
+  resources :games
+
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
@@ -16,6 +18,9 @@ SampleApp::Application.routes.draw do
 
   match '/contact', to: 'static_pages#contact'
 
+  match '/create_game', to: 'games#new'
+
+  match '/find_game', to: 'games#index'
   
 
   # The priority is based upon order of creation:

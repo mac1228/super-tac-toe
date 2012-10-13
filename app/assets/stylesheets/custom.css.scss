@@ -13,6 +13,9 @@ $grayMediumLight: #eaeaea;
 }
 
 /* universal */
+td {
+  padding-top:10px; 
+}
 
 html {
   overflow-y: scroll;
@@ -32,8 +35,8 @@ textarea {
 }
 
 .center {
+  border: 2px solid #000000;
   text-align: center;
-
   h1{
   	margin-bottom: 10px;
   }
@@ -69,11 +72,14 @@ p {
 /* header */
 
 .navbar-inner {
+  border: 2px solid #000000;
   min-height: 40px;
   background-color: #f00; /* background color will be black for all browsers */
   background-image: none;
   background-repeat: no-repeat;
   filter: none;
+
+
 }
 
 #logo {
@@ -88,9 +94,11 @@ p {
   line-height: 1;
 
   &:hover{
-  	color: #fff;
+  	color: #379;
   	text-decoration: none;
   }
+
+
 }
 
 /* footer */
